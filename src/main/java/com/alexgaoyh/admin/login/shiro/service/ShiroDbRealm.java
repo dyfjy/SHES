@@ -56,9 +56,11 @@ public class ShiroDbRealm extends AuthorizingRealm {
 	}
 	
 	private void setMenuPerms(Set<String> permissions, SysmanResource resource) {
-		permissions.add(resource.getPid()+"");
-		if(resource.getParent()!=null){
-			setMenuPerms(permissions, resource.getParent());
+		if(resource != null) {
+			permissions.add(resource.getHref());
+			if(resource.getParent()!=null){
+				setMenuPerms(permissions, resource.getParent());
+			}
 		}
 	}
 
