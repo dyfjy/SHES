@@ -28,7 +28,7 @@ public class ${className}Action extends BaseController<${className}> {
 	private static final Logger LOGGER = Logger.getLogger(${className}.class);
 	
 	@Override
-	@Resource(name = "${className}ServiceImpl")
+	@Resource(name = "${springName}ServiceImpl")
 	public void setBaseService(BaseService<${className}> baseService) {
 		this.baseService = baseService;
 	}
