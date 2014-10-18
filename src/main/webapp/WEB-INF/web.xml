@@ -125,6 +125,16 @@
 		<url-pattern>/servlet/captchaCode</url-pattern>
 	</servlet-mapping>
 	
+	<!-- ueditor servlet config-->
+	<servlet>
+		<servlet-name>UeditorServlet</servlet-name>
+		<servlet-class>com.baidu.ueditor.servlet.uploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UeditorServlet</servlet-name>
+		<url-pattern>/servlet/ueditor</url-pattern>
+	</servlet-mapping>
+	
 	<!-- session超时定义,单位为分钟 -->  
     <session-config>  
         <session-timeout>30</session-timeout>  

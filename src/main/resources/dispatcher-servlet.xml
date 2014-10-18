@@ -16,7 +16,7 @@
         http://www.springframework.org/schema/tx   
         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">  
 
-	<mvc:resources location="/WEB-INF/views/" mapping="/views/**"/>
+	<mvc:resources location="/WEB-INF/" mapping="/**"/>
   
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/" />  
