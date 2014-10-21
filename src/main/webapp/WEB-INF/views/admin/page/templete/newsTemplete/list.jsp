@@ -33,8 +33,8 @@
 			<tr>
 				<th data-options="field:'ck',checkbox:true"></th>
 				<th data-options="field:'pid',width:80">编码</th>
-				<th data-options="field:'name',width:80">模板名称</th>
-				<th data-options="field:'content',width:80">模板内容</th>
+				<th data-options="field:'name',width:80">名称</th>
+				<th data-options="field:'tags',width:80">标签</th>
 			</tr>
 		</thead>
 	</table>
@@ -45,19 +45,23 @@
 		<a href="#" class="easyui-linkbutton remove" iconCls="icon-remove" plain="true">删除</a>
 	</div>
 	
-	<div id="dlg-1" class="easyui-dialog" title="数据参数" style="width: 900px; height: 500px; padding: 10px 20px; z-Index: 100px;" closed="true" buttons="#dlg-buttons-1">
+	<div id="dlg-1" class="easyui-dialog" title="数据参数" style="width: 1200px; height: 500px; padding: 10px 20px; z-Index: 100px;" closed="true" buttons="#dlg-buttons-1">
 		<form method="post">
 			<table cellpadding="5">
 				<tr>
 					<td><input type="hidden" name="pid" /></td>
 				</tr>
 	    		<tr>
-	    			<td>模板名称:</td>
+	    			<td>名称:</td>
 	    			<td><input class="easyui-textbox" type="text" name="name" data-options="required:true"></input></td>
 	    		</tr>
 	    		<tr>
-	    			<td>模板内容:</td>
-	    			<td><script id="content" type="text/plain" style="width:1024px;height:500px;"></script></td>
+	    			<td>标签:</td>
+	    			<td><input class="easyui-textbox" type="text" name="tags" data-options="required:true"></input></td>
+	    		</tr>
+	    		<tr>
+	    			<td>内容:</td>
+	    			<td><script id="content" name="content" type="text/plain" style="width:1024px;height:500px;"></script></td>
 	    		</tr>
 	    	</table>
 		</form>
@@ -78,7 +82,27 @@
 			
 			var dg1 = new DataGridEasyui(context_, 1 , templateUrl, 'crud');
 			
-			var ue = UE.getEditor('content');
+			UE.getEditor('content');
+			
+			$.extend(dg1, {
+				formLoadData:function (data){
+					DataGridEasyui.prototype.formLoadData.call(this,data);
+					
+					UE.getEditor('content').setContent(data.content);	
+				},
+				validateForm:function (form){
+					DataGridEasyui.prototype.validateForm.call(this,form);
+					
+					UE.getEditor('content').sync(); 
+					
+					if(!UE.getEditor('content').hasContents()){
+						alert("请录入内容！");
+						return false;
+					}
+					
+				}
+
+			});
 			
 			dg1.init();
 		});

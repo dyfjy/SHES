@@ -10,10 +10,29 @@ Target Server Type    : MYSQL
 Target Server Version : 50612
 File Encoding         : 65001
 
-Date: 2014-10-13 17:00:33
+Date: 2014-10-21 14:53:02
 */
 
 SET FOREIGN_KEY_CHECKS=0;
+
+-- ----------------------------
+-- Table structure for `news_templete`
+-- ----------------------------
+DROP TABLE IF EXISTS `news_templete`;
+CREATE TABLE `news_templete` (
+  `pid` int(11) NOT NULL,
+  `createTime` datetime DEFAULT NULL,
+  `delete_flag` int(11) DEFAULT NULL,
+  `content` varchar(10000) DEFAULT NULL,
+  `name` varchar(255) DEFAULT NULL,
+  `tags` varchar(255) DEFAULT NULL,
+  PRIMARY KEY (`pid`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of news_templete
+-- ----------------------------
+INSERT INTO `news_templete` VALUES ('1', '2014-10-21 14:07:25', '0', '<p class=\"picIntro\" style=\"text-align: left;\">台当局控制的太平岛码头兴建工程已启动，图为完工后示意图。 图片来源：台湾《中时电子报》</p><p style=\"text-align: left;\">原标题：大陆南海7岛填海造陆 台担心严重冲击太平岛防务</p><p>【环\r\n球网综合报道】台湾《中国时报》报道称，中国大陆从今年开始，在南海多个岛礁进行大规模填海造陆，对太平岛形成“包围之势”，台“国安”单位相当重视。据\r\n早前报道，台“国安局长”李翔宙曾在台“立法院”坦言“非常担心”，称大陆目前在南海7个岛礁所进行的填海造陆作业，有5个是由最高领导人核定的，目标是\r\n“小岛堡垒化”和“大岛阵地化”。</p><p>李翔宙表示，以“华阳礁”为例，去年3月还只有1000平方米，到今年7月已经有14万平方米，到9月底已达18万平方米。</p><p>李翔宙说，解放军海军司令在9月下旬，史无前例地用一星期时间，逐岛视察这些岛礁的填海造陆工程，还在永暑礁视察三军联合作战想定的操演，借此宣示中国大陆在南海已经有全盘的战略规划。</p><p>报道称，长期关心南海局势的国民党“立委”林郁方指出，包括赤瓜礁、东门礁、南熏礁和华阳礁，对太平岛已呈现“包围态势”。有外国官员还认为，在华阳礁、赤瓜礁和南熏礁完工后，大陆就会宣布设立“南海防空识别区”。</p><p>林\r\n郁方表示，赤瓜礁、东门礁和南熏礁不仅已经对太平岛形成“包围”，与太平岛的距离更是“一个比一个近”，赤瓜礁在太平岛南方70公里、东门礁在东南方57\r\n公里，南熏礁更是在太平岛西南方只有30公里。不论中国大陆最后填海的目的是大型雷达站、码头或跑道，对太平岛的防务势将造成“严重的冲击”。<span class=\"ifengLogo\"><a href=\"http://www.ifeng.com/\" target=\"_blank\"></a></span></p><p><br/></p>', '台当局控制的太平岛码头兴建工程已启动', '南海7岛 台湾 ');
 
 -- ----------------------------
 -- Table structure for `sysman_resource`
@@ -42,7 +61,9 @@ INSERT INTO `sysman_resource` VALUES ('2', '2014-10-13 15:40:58', '0', '角色�
 INSERT INTO `sysman_resource` VALUES ('3', '2014-10-13 15:40:53', '0', '用户管理', '/admin/sysmanUser/list', '用户管理', '1', '1', '5');
 INSERT INTO `sysman_resource` VALUES ('4', '2014-10-13 15:41:02', '0', '资源管理', '/admin/sysmanResource/list', '资源管理', '3', '1', '5');
 INSERT INTO `sysman_resource` VALUES ('5', '2014-10-13 15:40:45', '0', '账号管理', '/', '账号管理', '1', '1', '1');
-INSERT INTO `sysman_resource` VALUES ('6', '2014-10-13 15:50:53', '0', 'a', '/a', 'a', '2', '1', '1');
+INSERT INTO `sysman_resource` VALUES ('6', '2014-10-16 17:50:32', '1', '首页管理', '/admin/page/home', '首页管理', '1', '1', '1');
+INSERT INTO `sysman_resource` VALUES ('7', '2014-10-16 18:18:46', '0', '模板管理', '/', '模板管理', '2', '1', '1');
+INSERT INTO `sysman_resource` VALUES ('8', '2014-10-16 18:23:19', '0', '新闻页模板管理', '/admin/page/templete/newsTemplete/list', '新闻页模板管理', '1', '1', '7');
 
 -- ----------------------------
 -- Table structure for `sysman_role`
@@ -63,7 +84,7 @@ CREATE TABLE `sysman_role` (
 -- ----------------------------
 -- Records of sysman_role
 -- ----------------------------
-INSERT INTO `sysman_role` VALUES ('1', '2014-10-13 15:51:07', '0', '系统管理员', '系统管理员', null);
+INSERT INTO `sysman_role` VALUES ('1', '2014-10-16 18:22:36', '0', '系统管理员', '系统管理员', null);
 
 -- ----------------------------
 -- Table structure for `sysman_role_resource`
@@ -81,10 +102,13 @@ CREATE TABLE `sysman_role_resource` (
 -- ----------------------------
 -- Records of sysman_role_resource
 -- ----------------------------
+INSERT INTO `sysman_role_resource` VALUES ('1', '1');
 INSERT INTO `sysman_role_resource` VALUES ('1', '5');
 INSERT INTO `sysman_role_resource` VALUES ('1', '3');
 INSERT INTO `sysman_role_resource` VALUES ('1', '2');
 INSERT INTO `sysman_role_resource` VALUES ('1', '4');
+INSERT INTO `sysman_role_resource` VALUES ('1', '7');
+INSERT INTO `sysman_role_resource` VALUES ('1', '8');
 
 -- ----------------------------
 -- Table structure for `sysman_user`

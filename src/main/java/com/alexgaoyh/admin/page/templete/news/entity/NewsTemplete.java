@@ -25,8 +25,13 @@ public class NewsTemplete extends BaseEntity{
 	/**
 	 * 模板内容
 	 */
-	@Column(length=10000)
+	@Column(length=16777216)
 	private String content;
+	
+	/**
+	 * 标签
+	 */
+	private String tags;
 
 	
 	public String getName() {
@@ -43,6 +48,14 @@ public class NewsTemplete extends BaseEntity{
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public String getTags() {
+		return tags;
+	}
+
+	public void setTags(String tags) {
+		this.tags = tags;
 	}
 	
 	
