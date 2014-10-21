@@ -33,6 +33,10 @@
    <link href="<%=context %>/views/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
    <link href="<%=context %>/views/assets/css/custom.css" rel="stylesheet" type="text/css"/>
    <!-- END THEME STYLES -->
+   
+   <!-- ueditor 视频播放 -->
+   <link href="<%=context %>/third-party/video-js/video-js.min.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/third-party/video-js/video.js" rel="stylesheet" type="text/css"/>
 
    <link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -67,7 +71,7 @@
 				<!-- BEGIN LEFT SIDEBAR -->
 				<!-- TODO -->
 				<div class="col-md-9 blog-item margin-bottom-40">
-					sdfadsfasd      
+					${newsTemplete.content}
 				</div>
 				<!-- END LEFT SIDEBAR -->
 
