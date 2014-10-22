@@ -42,9 +42,13 @@
    <link rel="shortcut icon" href="favicon.ico" />
 </head>
 <!-- END HEAD -->
-	<jsp:include page="../../common/header.jsp"></jsp:include>
 <!-- BEGIN BODY -->
 <body>
+	
+	<!-- BEGIN HEADER -->
+    <jsp:include page="../../common/header.jsp"></jsp:include>
+    <!-- END HEADER -->
+	
     <!-- BEGIN PAGE CONTAINER -->  
     <div class="page-container">
 
@@ -184,6 +188,9 @@
 	</div>
     <!-- END BEGIN PAGE CONTAINER -->  
 	
+	<!-- footer begin -->
+	<jsp:include page="../../common/footer.jsp"></jsp:include>
+	<!-- footer end -->
 	
     <!-- Load javascripts at bottom, this will reduce page load time -->
     <!-- BEGIN CORE PLUGINS(REQUIRED FOR ALL PAGES) -->

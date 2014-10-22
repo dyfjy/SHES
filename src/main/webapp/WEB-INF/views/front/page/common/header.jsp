@@ -144,14 +144,14 @@
 						<li><a href="portfolio_2.html">Portfolio 2</a></li>
 						<li><a href="portfolio_item.html">Portfolio Item</a></li>
 					</ul> --></li>
-				<li class="dropdown active"><a class="dropdown-toggle"
+				<li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown" data-hover="dropdown" data-delay="0"
 					data-close-others="false" href="#"> Blog <i
 						class="fa fa-angle-down"></i>
 				</a>
 					<ul class="dropdown-menu">
 						<li><a href="blog.html">Blog Page</a></li>
-						<li class="active"><a href="blog_item.html">Blog Item</a></li>
+						<li><a href="blog_item.html">Blog Item</a></li>
 					</ul></li>
 				<!-- <li><a
 					href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin&page=index.html"
