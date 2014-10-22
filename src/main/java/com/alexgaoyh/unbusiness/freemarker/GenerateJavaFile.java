@@ -27,12 +27,12 @@ public class GenerateJavaFile {
 
 	public static void demo() {
 		Map<String, Object> root = new HashMap<String, Object>();
-		root.put("packageName", "com.alexgaoyh.admin.page.templete.news");// 包路径
-		root.put("className", "NewsTemplete");// 类名称
-		root.put("springName", "newsTemplete");// 类名称的首字母小写
+		root.put("packageName", "com.alexgaoyh.admin.page.templete.portfolio");// 包路径
+		root.put("className", "PortfolioType");// 类名称
+		root.put("springName", "portfolioType");// 类名称的首字母小写
 		root.put("author", "alexgaoyh");// 作者
-		root.put("tableName", "NEWS_TEMPLETE");// 表名称
-		root.put("entityNameCN", "新闻页面-管理模板");// 类描述
+		root.put("tableName", "PORTFOLIO_TYPE");// 表名称
+		root.put("entityNameCN", "代表作品集_类型-管理模板");// 类描述
 		root.put("date", new Date().toString());// 创建时间
 		String workDir = (String) System.getProperties().get("user.dir");
 		try {
