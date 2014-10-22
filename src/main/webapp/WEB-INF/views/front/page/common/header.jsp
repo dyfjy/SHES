@@ -41,24 +41,22 @@
 		<!-- BEGIN TOP NAVIGATION MENU -->
 		<div class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
-				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-					data-close-others="false" href="#"> Home <i
-						class="fa fa-angle-down"></i>
+				<li class="dropdown"><a href="index.html"> Home <!-- <i
+						class="fa fa-angle-down"></i> -->
 				</a>
-					<ul class="dropdown-menu">
+					<!-- <ul class="dropdown-menu">
 						<li><a href="index.html">Home Default</a></li>
 						<li><a href="page_home_fixed_header.html">Header Fixed</a></li>
 						<li><a href="page_home2.html">Home with Top Bar</a></li>
-					</ul></li>
-				<li class="dropdown"><a class="dropdown-toggle"
+					</ul> --></li>
+				<!-- <li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown" data-delay="0" data-close-others="false"
 					data-target="#" href="#"> Mega Menu <i class="fa fa-angle-down"></i>
-				</a> <!-- BEGIN DROPDOWN MENU -->
+				</a> BEGIN DROPDOWN MENU
 					<ul class="dropdown-menu" aria-labelledby="mega-menu">
 						<li>
 							<div class="nav-content">
-								<!-- BEGIN DROPDOWN MENU - COLUMN -->
+								BEGIN DROPDOWN MENU - COLUMN
 								<div class="nav-content-col">
 									<h3>Footwear</h3>
 									<ul>
@@ -72,8 +70,8 @@
 										<li><a href="#">Indoor and Court Trainers</a></li>
 									</ul>
 								</div>
-								<!-- END DROPDOWN MENU - COLUMN -->
-								<!-- BEGIN DROPDOWN MENU - COLUMN -->
+								END DROPDOWN MENU - COLUMN
+								BEGIN DROPDOWN MENU - COLUMN
 								<div class="nav-content-col">
 									<h3>Clothing</h3>
 									<ul>
@@ -87,8 +85,8 @@
 										<li><a href="#">Golf Tops</a></li>
 									</ul>
 								</div>
-								<!-- END DROPDOWN MENU - COLUMN -->
-								<!-- BEGIN DROPDOWN MENU - COLUMN -->
+								END DROPDOWN MENU - COLUMN
+								BEGIN DROPDOWN MENU - COLUMN
 								<div class="nav-content-col">
 									<h3>Accessories</h3>
 									<ul>
@@ -103,10 +101,10 @@
 										<li><a href="#">Bottoms</a></li>
 									</ul>
 								</div>
-								<!-- END DROPDOWN MENU - COLUMN -->
+								END DROPDOWN MENU - COLUMN
 							</div>
 						</li>
-					</ul> <!-- END DROPDOWN MENU --></li>
+					</ul> END DROPDOWN MENU</li> -->
 				<li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown" data-hover="dropdown" data-delay="0"
 					data-close-others="false" href="#"> Pages <i
@@ -118,15 +116,15 @@
 						<li><a href="page_prices.html">Prices</a></li>
 						<li><a href="page_faq.html">FAQ</a></li>
 						<li><a href="page_gallery.html">Gallery</a></li>
-						<li><a href="page_search_result.html">Search Result</a></li>
+						<!-- <li><a href="page_search_result.html">Search Result</a></li>
 						<li><a href="page_404.html">404</a></li>
 						<li><a href="page_500.html">500</a></li>
-						<li><a href="page_login.html">Login Page</a></li>
+						<li><a href="page_login.html">Login Page</a></li> -->
 						<li><a href="page_signup.html">Signup Page</a></li>
 						<li><a href="page_careers.html">Careers</a></li>
 						<li><a href="page_contacts.html">Contact</a></li>
 					</ul></li>
-				<li class="dropdown"><a class="dropdown-toggle"
+				<!-- <li class="dropdown"><a class="dropdown-toggle"
 					data-toggle="dropdown" data-hover="dropdown" data-delay="0"
 					data-close-others="false" href="#"> Features <i
 						class="fa fa-angle-down"></i>
@@ -136,18 +134,16 @@
 						<li><a href="feature_buttons.html">Buttons</a></li>
 						<li><a href="feature_forms.html">Forms</a></li>
 						<li><a href="feature_icons.html">Icons</a></li>
-					</ul></li>
-				<li class="dropdown"><a class="dropdown-toggle"
-					data-toggle="dropdown" data-hover="dropdown" data-delay="0"
-					data-close-others="false" href="#"> Portfolio <i
-						class="fa fa-angle-down"></i>
+					</ul></li> -->
+				<li class="dropdown"><a href="portfolio_4.html"> Portfolio <!-- <i
+						class="fa fa-angle-down"></i> -->
 				</a>
-					<ul class="dropdown-menu">
+					<!-- <ul class="dropdown-menu">
 						<li><a href="portfolio_4.html">Portfolio 4</a></li>
 						<li><a href="portfolio_3.html">Portfolio 3</a></li>
 						<li><a href="portfolio_2.html">Portfolio 2</a></li>
 						<li><a href="portfolio_item.html">Portfolio Item</a></li>
-					</ul></li>
+					</ul> --></li>
 				<li class="dropdown active"><a class="dropdown-toggle"
 					data-toggle="dropdown" data-hover="dropdown" data-delay="0"
 					data-close-others="false" href="#"> Blog <i
@@ -157,10 +153,10 @@
 						<li><a href="blog.html">Blog Page</a></li>
 						<li class="active"><a href="blog_item.html">Blog Item</a></li>
 					</ul></li>
-				<li><a
+				<!-- <li><a
 					href="http://www.keenthemes.com/preview/index.php?theme=metronic_admin&page=index.html"
-					target="_blank">Admin Theme</a></li>
-				<li class="menu-search"><span class="sep"></span> <i
+					target="_blank">Admin Theme</a></li> -->
+				<!-- <li class="menu-search"><span class="sep"></span> <i
 					class="fa fa-search search-btn"></i>
 
 					<div class="search-box">
@@ -172,7 +168,7 @@
 								</span>
 							</div>
 						</form>
-					</div></li>
+					</div></li> -->
 			</ul>
 		</div>
 		<!-- BEGIN TOP NAVIGATION MENU -->
