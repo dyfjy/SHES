@@ -37,6 +37,7 @@
    <!-- ueditor 视频播放 -->
    <link href="<%=context %>/third-party/video-js/video-js.min.css" rel="stylesheet" type="text/css"/>
    <link href="<%=context %>/third-party/video-js/video.js" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/ueditor.parse.js" rel="stylesheet" type="text/css"/>
 
    <link rel="shortcut icon" href="favicon.ico" />
 </head>
