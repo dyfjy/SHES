@@ -90,111 +90,23 @@ License: You must have a valid license purchased only from themeforest(the above
                               	  		<c:if test="${status.index!=0}">
                               	  			<li class="filter" data-filter="${portfolioType.name}">${portfolioType.description}</li>
                               	  		</c:if>
-                              	  		
-                              	  	 	
 								  </c:forEach>
                               </ul>
                               <div class="row mix-grid thumbnails">
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_1 mix_all">
-                                    <div class="mix-inner">
-                                       <img class="img-responsive" src="assets/img/works/img1.jpg" alt="">
-                                       <div class="mix-details">
-                                          <h4>Cascusamus et iusto odio</h4>
-                                          <a class="mix-link"><i class="fa fa-link"></i></a>
-                                          <a class="mix-preview fancybox-button" href="assets/img/works/img1.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                                       </div>           
-                                    </div>                       
-                                  </div>
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_2 mix_all">
-                                       <div class="mix-inner">
-                                          <img class="img-responsive" src="assets/img/works/img2.jpg" alt="">
-                                          <div class="mix-details">
-                                             <h4>Cascusamus et iusto accusamus</h4>
-                                             <a class="mix-link"><i class="fa fa-link"></i></a>
-                                             <a class="mix-preview fancybox-button" href="assets/img/works/img2.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                                          </div>               
-                                       </div>                    
-                                  </div>
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_3 mix_all">
-                                       <div class="mix-inner">
-                                          <img class="img-responsive" src="assets/img/works/img3.jpg" alt="">
-                                          <div class="mix-details">
-                                             <h4>Cascusamus et iusto accusamus</h4>
-                                             <a class="mix-link"><i class="fa fa-link"></i></a>
-                                             <a class="mix-preview fancybox-button" href="assets/img/works/img3.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                                          </div>              
-                                      </div>      
-                                  </div>
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_1 category_2 mix_all">
-                                       <div class="mix-inner">
-                                         <img class="img-responsive" src="assets/img/works/img4.jpg" alt="">
-                                         <div class="mix-details">
-                                             <h4>Cascusamus et iusto accusamus</h4>
-                                             <a class="mix-link"><i class="fa fa-link"></i></a>
-                                             <a class="mix-preview fancybox-button" href="assets/img/works/img4.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>                            
-                                         </div>                  
-                                      </div>                      
-                                  </div>
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_2 category_1 mix_all">
-                                    <div class="mix-inner">
-                                      <img class="img-responsive" src="assets/img/works/img5.jpg" alt="">
-                                      <div class="mix-details">
-                                          <h4>Cascusamus et iusto accusamus</h4>
-                                          <a class="mix-link"><i class="fa fa-link"></i></a>
-                                          <a class="mix-preview fancybox-button" href="assets/img/works/img5.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>                            
-                                      </div>     
-                                      </div>                                   
-                                  </div>
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_1 category_2 mix_all">
-                                    <div class="mix-inner">
-                                      <img class="img-responsive" src="assets/img/works/img6.jpg" alt="">
-                                      <div class="mix-details">
-                                          <h4>Cascusamus et iusto accusamus</h4>
-                                          <a class="mix-link"><i class="fa fa-link"></i></a>
-                                          <a class="mix-preview fancybox-button" href="assets/img/works/img6.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>                            
-                                      </div>     
-                                      </div>                                   
-                                  </div>
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_2 category_3 mix_all">
-                                    <div class="mix-inner">
-                                      <img class="img-responsive" src="assets/img/works/img1.jpg" alt="">
-                                      <div class="mix-details">
-                                          <h4>Cascusamus et iusto accusamus</h4>
-                                          <a class="mix-link"><i class="fa fa-link"></i></a>
-                                          <a class="mix-preview fancybox-button" href="assets/img/works/img1.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>                            
-                                      </div>    
-                                      </div>                                    
-                                  </div>
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_1 category_2 mix_all">
-                                    <div class="mix-inner">
-                                      <img class="img-responsive" src="assets/img/works/img2.jpg" alt="">
-                                      <div class="mix-details">
-                                          <h4>Cascusamus et iusto accusamus</h4>
-                                          <a class="mix-link"><i class="fa fa-link"></i></a>
-                                          <a class="mix-preview fancybox-button" href="assets/img/works/img2.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>                            
-                                      </div>   
-                                      </div>                                     
-                                  </div>
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_3 mix_all">
-                                    <div class="mix-inner">
-                                      <img class="img-responsive" src="assets/img/works/img4.jpg" alt="">
-                                      <div class="mix-details">
-                                          <h4>Cascusamus et iusto accusamus</h4>
-                                          <a class="mix-link"><i class="fa fa-link"></i></a>
-                                          <a class="mix-preview fancybox-button" href="assets/img/works/img4.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>                            
-                                      </div>    
-                                      </div>                                    
-                                  </div>
-                                  <div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix category_1 mix_all">
-                                    <div class="mix-inner">
-                                      <img class="img-responsive" src="assets/img/works/img3.jpg" alt="">
-                                      <div class="mix-details">
-                                          <h4>Cascusamus et iusto accusamus</h4>
-                                          <a class="mix-link"><i class="fa fa-link"></i></a>
-                                          <a class="mix-preview fancybox-button" href="assets/img/works/img3.jpg" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
-                                      </div> 
-                                      </div>                                       
-                                  </div>
+                              	  
+                              	  <c:forEach var="portfolioTemplete" items="${portfolioTempleteList}" varStatus="status">
+									<div style="display: inline-block;  opacity: 1;" class="col-md-3 col-sm-4 mix ${portfolioTemplete.portfolioType.name }">
+	                                    <div class="mix-inner">
+	                                       <img class="img-responsive" src="${portfolioTemplete.srcPart }" alt="">
+	                                       <div class="mix-details">
+	                                          <h4>Cascusamus et iusto odio</h4>
+	                                          <a class="mix-link"><i class="fa fa-link"></i></a>
+	                                          <a class="mix-preview fancybox-button" href="${portfolioTemplete.srcPart }" title="Project Name" data-rel="fancybox-button"><i class="fa fa-search"></i></a>
+	                                       </div>           
+	                                    </div>                       
+                                    </div>
+								  </c:forEach>
+								  
                               </div>
         			</div>
         			<!-- END FILTER -->           

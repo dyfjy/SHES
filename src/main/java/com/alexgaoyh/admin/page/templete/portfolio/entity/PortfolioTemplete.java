@@ -1,11 +1,14 @@
 package com.alexgaoyh.admin.page.templete.portfolio.entity;
 
+import java.beans.Transient;
+
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
+import com.alexgaoyh.admin.page.templete.portfolio.util.RegexUtil;
 import com.alexgaoyh.common.entity.BaseEntity;
 
 /**
@@ -58,6 +61,11 @@ public class PortfolioTemplete extends BaseEntity{
 
 	public void setPortfolioType(PortfolioType portfolioType) {
 		this.portfolioType = portfolioType;
+	}
+	
+	@Transient
+	public String getSrcPart() {
+		return RegexUtil.getHrefStrFromContent(this.content);
 	}
 	
 	
