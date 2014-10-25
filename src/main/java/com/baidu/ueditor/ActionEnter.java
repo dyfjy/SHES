@@ -112,7 +112,7 @@ public class ActionEnter {
 	}
 	
 	/**
-	 * callback参数验证
+	 * callback鍙傛暟楠岃瘉
 	 */
 	public boolean validCallbackName ( String name ) {
 		

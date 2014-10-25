@@ -40,9 +40,9 @@ public class PathFormat {
 	}
 	
 	/**
-	 * ¸ñÊ½»¯Â·¾¶, °ÑwindowsÂ·¾¶Ìæ»»³É±ê×¼Â·¾¶
-	 * @param input ´ı¸ñÊ½»¯µÄÂ·¾¶
-	 * @return ¸ñÊ½»¯ºóµÄÂ·¾¶
+	 * æ ¼å¼åŒ–è·¯å¾„, æŠŠwindowsè·¯å¾„æ›¿æ¢æˆæ ‡å‡†è·¯å¾„
+	 * @param input å¾…æ ¼å¼åŒ–çš„è·¯å¾„
+	 * @return æ ¼å¼åŒ–åçš„è·¯å¾„
 	 */
 	public static String format ( String input ) {
 		
@@ -81,7 +81,7 @@ public class PathFormat {
 		
 		pattern = pattern.toLowerCase();
 		
-		// time ´¦Àí
+		// time å¤„ç†
 		if ( pattern.indexOf( PathFormat.TIME ) != -1 ) {
 			return PathFormat.getTimestamp();
 		} else if ( pattern.indexOf( PathFormat.FULL_YEAR ) != -1 ) {
