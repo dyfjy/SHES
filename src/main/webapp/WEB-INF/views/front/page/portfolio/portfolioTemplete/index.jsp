@@ -28,21 +28,21 @@ License: You must have a valid license purchased only from themeforest(the above
     <meta content="" name="author" />
 
    <!-- BEGIN GLOBAL MANDATORY STYLES -->          
-   <link href="<%=context %>/views/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/views/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
    <!-- END GLOBAL MANDATORY STYLES -->
    
    <!-- BEGIN PAGE LEVEL PLUGIN STYLES --> 
-   <link href="<%=context %>/views/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" />               
+   <link href="<%=context %>/front/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" />               
    <!-- END PAGE LEVEL PLUGIN STYLES -->
 
    <!-- BEGIN THEME STYLES --> 
-   <link href="<%=context %>/views/assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/views/assets/css/style.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/views/assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
-   <link href="<%=context %>/views/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/views/assets/css/pages/portfolio.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/views/assets/css/custom.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/css/style.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
+   <link href="<%=context %>/front/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/css/pages/portfolio.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/css/custom.css" rel="stylesheet" type="text/css"/>
    <!-- END THEME STYLES -->
 
    <link rel="shortcut icon" href="favicon.ico" />
@@ -127,18 +127,18 @@ License: You must have a valid license purchased only from themeforest(the above
     <!--[if lt IE 9]>
     <script src="assets/plugins/respond.min.js"></script>  
     <![endif]-->  
-    <script src="<%=context %>/views/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="<%=context %>/views/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-    <script src="<%=context %>/views/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script type="text/javascript" src="<%=context %>/views/assets/plugins/hover-dropdown.js"></script>
-    <script type="text/javascript" src="<%=context %>/views/assets/plugins/back-to-top.js"></script>    
+    <script src="<%=context %>/front/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="<%=context %>/front/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="<%=context %>/front/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script type="text/javascript" src="<%=context %>/front/assets/plugins/hover-dropdown.js"></script>
+    <script type="text/javascript" src="<%=context %>/front/assets/plugins/back-to-top.js"></script>    
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS(REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script type="text/javascript" src="<%=context %>/views/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
-    <script src="<%=context %>/views/assets/plugins/jquery.mixitup.min.js"></script>    
-    <script src="<%=context %>/views/assets/scripts/app.js"></script>
-    <script src="<%=context %>/views/assets/scripts/portfolio.js"></script> 
+    <script type="text/javascript" src="<%=context %>/front/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>
+    <script src="<%=context %>/front/assets/plugins/jquery.mixitup.min.js"></script>    
+    <script src="<%=context %>/front/assets/scripts/app.js"></script>
+    <script src="<%=context %>/front/assets/scripts/portfolio.js"></script> 
     <script type="text/javascript">
         jQuery(document).ready(function() {
             App.init();

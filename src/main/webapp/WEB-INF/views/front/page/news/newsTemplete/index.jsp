@@ -18,26 +18,26 @@
     <meta content="alexgaoyh" name="author" />
 
    <!-- BEGIN GLOBAL MANDATORY STYLES -->          
-   <link href="<%=context %>/views/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/views/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
    <!-- END GLOBAL MANDATORY STYLES -->
    
    <!-- BEGIN PAGE LEVEL PLUGIN STYLES --> 
-   <link href="<%=context %>/views/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" />               
+   <link href="<%=context %>/front/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" />               
    <!-- END PAGE LEVEL PLUGIN STYLES -->
 
    <!-- BEGIN THEME STYLES --> 
-   <link href="<%=context %>/views/assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/views/assets/css/style.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/views/assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
-   <link href="<%=context %>/views/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/views/assets/css/custom.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/css/style.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
+   <link href="<%=context %>/front/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/front/assets/css/custom.css" rel="stylesheet" type="text/css"/>
    <!-- END THEME STYLES -->
    
    <!-- ueditor 视频播放 -->
-   <link href="<%=context %>/third-party/video-js/video-js.min.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/third-party/video-js/video.js" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/ueditor.parse.js" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/ueditor/third-party/video-js/video-js.min.css" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/ueditor/third-party/video-js/video.js" rel="stylesheet" type="text/css"/>
+   <link href="<%=context %>/ueditor/ueditor.parse.js" rel="stylesheet" type="text/css"/>
 
    <link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -98,7 +98,7 @@
 					<div class="recent-news margin-bottom-10">
 						<div class="row margin-bottom-10">
 							<div class="col-md-3">
-								<img src="${pageContext.request.contextPath}/views/assets/img/people/img2-large.jpg" alt="" class="img-responsive">                        
+								<img src="${pageContext.request.contextPath}/front/assets/img/people/img2-large.jpg" alt="" class="img-responsive">                        
 							</div>
 							<div class="col-md-9 recent-news-inner">
 								<h3><a href="#">Letiusto gnissimos</a></h3>
@@ -107,7 +107,7 @@
 						</div>
 						<div class="row margin-bottom-10">
 							<div class="col-md-3">
-								<img src="${pageContext.request.contextPath}/views/assets/img/people/img1-large.jpg" alt="" class="img-responsive">                        
+								<img src="${pageContext.request.contextPath}/front/assets/img/people/img1-large.jpg" alt="" class="img-responsive">                        
 							</div>
 							<div class="col-md-9 recent-news-inner">
 								<h3><a href="#">Deiusto anissimos</a></h3>
@@ -116,7 +116,7 @@
 						</div>
 						<div class="row margin-bottom-10">
 							<div class="col-md-3">
-								<img src="${pageContext.request.contextPath}/views/assets/img/people/img3-large.jpg" alt="" class="img-responsive">                        
+								<img src="${pageContext.request.contextPath}/front/assets/img/people/img3-large.jpg" alt="" class="img-responsive">                        
 							</div>
 							<div class="col-md-9 recent-news-inner">
 								<h3><a href="#">Tesiusto baissimos</a></h3>
@@ -151,14 +151,14 @@
 					<div class="blog-photo-stream margin-bottom-20">
 						<h2>Photos Stream</h2>
 						<ul class="list-unstyled">
-							<li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/people/img5-small.jpg" alt=""></a></li>
-							<li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/works/img1.jpg" alt=""></a></li>
-							<li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/people/img4-large.jpg" alt=""></a></li>
-							<li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/works/img6.jpg" alt=""></a></li>
-							<li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/pics/img1-large.jpg" alt=""></a></li>
-							<li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/pics/img2-large.jpg" alt=""></a></li>
-							<li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/works/img3.jpg" alt=""></a></li>
-							<li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/people/img2-large.jpg" alt=""></a></li>
+							<li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/people/img5-small.jpg" alt=""></a></li>
+							<li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/works/img1.jpg" alt=""></a></li>
+							<li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/people/img4-large.jpg" alt=""></a></li>
+							<li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/works/img6.jpg" alt=""></a></li>
+							<li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/pics/img1-large.jpg" alt=""></a></li>
+							<li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/pics/img2-large.jpg" alt=""></a></li>
+							<li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/works/img3.jpg" alt=""></a></li>
+							<li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/people/img2-large.jpg" alt=""></a></li>
 						</ul>                    
 					</div>
 					<!-- END BLOG PHOTOS STREAM -->
@@ -197,16 +197,16 @@
     <!--[if lt IE 9]>
     <script src="assets/plugins/respond.min.js"></script>  
     <![endif]-->  
-    <script src="<%=context %>/views/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="<%=context %>/views/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-    <script src="<%=context %>/views/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script type="text/javascript" src="<%=context %>/views/assets/plugins/hover-dropdown.js"></script>
-    <script type="text/javascript" src="<%=context %>/views/assets/plugins/back-to-top.js"></script>    
+    <script src="<%=context %>/front/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="<%=context %>/front/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="<%=context %>/front/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script type="text/javascript" src="<%=context %>/front/assets/plugins/hover-dropdown.js"></script>
+    <script type="text/javascript" src="<%=context %>/front/assets/plugins/back-to-top.js"></script>    
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS(REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script type="text/javascript" src="<%=context %>/views/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>  
-    <script src="<%=context %>/views/assets/scripts/app.js"></script>  
+    <script type="text/javascript" src="<%=context %>/front/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>  
+    <script src="<%=context %>/front/assets/scripts/app.js"></script>  
     <script type="text/javascript">
         jQuery(document).ready(function() {
             App.init();                      

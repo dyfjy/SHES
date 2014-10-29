@@ -33,7 +33,7 @@
 			<!-- END RESPONSIVE MENU TOGGLER -->
 			<!-- BEGIN LOGO (you can use logo image instead of text)-->
 			<a class="navbar-brand logo-v1" href="index.html"> <img
-				src="${pageContext.request.contextPath}/views/assets/img/logo_blue.png" id="logoimg" alt="">
+				src="${pageContext.request.contextPath}/front/assets/img/logo_blue.png" id="logoimg" alt="">
 			</a>
 			<!-- END LOGO -->
 		</div>

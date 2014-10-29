@@ -9,6 +9,6 @@
 	<title>alexgaoyh My title</title>
 </head>	
 <body>
-	<script type="text/javascript" src="<%=context %>/views/Scripts/jquery-1.4.1.js"></script>
+	<script type="text/javascript" src="<%=context %>/js/jquery/jquery-1.4.1.js"></script>
 </body>
 </html>

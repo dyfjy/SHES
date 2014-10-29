@@ -9,8 +9,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="<%=context %>/views/admin/mycss/index.css">
-	<script type="text/javascript" src="<%=context %>/views/Scripts/jquery-1.4.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="<%=context %>/css/admin/index.css">
+	<script type="text/javascript" src="<%=context %>/js/jquery/jquery-1.4.1.js"></script>
 </head>
 <body>
 

@@ -14,16 +14,16 @@
                     <!-- BEGIN BLOG PHOTOS STREAM -->
                     <div class="blog-photo-stream margin-bottom-30">
                         <ul class="list-unstyled">
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/people/img5-small.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/works/img1.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/people/img4-large.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/works/img6.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/pics/img1-large.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/pics/img2-large.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/works/img3.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/people/img2-large.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/works/img2.jpg" alt=""></a></li>
-                            <li><a href="#"><img src="${pageContext.request.contextPath}/views/assets/img/works/img5.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/people/img5-small.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/works/img1.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/people/img4-large.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/works/img6.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/pics/img1-large.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/pics/img2-large.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/works/img3.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/people/img2-large.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/works/img2.jpg" alt=""></a></li>
+                            <li><a href="#"><img src="${pageContext.request.contextPath}/front/assets/img/works/img5.jpg" alt=""></a></li>
                         </ul>                    
                     </div>
                     <!-- END BLOG PHOTOS STREAM -->                              

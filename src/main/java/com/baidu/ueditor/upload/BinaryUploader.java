@@ -70,7 +70,7 @@ public class BinaryUploader {
 
 			savePath = PathFormat.parse(savePath, originFileName);
 
-			String physicalPath = (String) conf.get("rootPath") + File.separator + "WEB-INF" + File.separator + savePath;
+			String physicalPath = (String) conf.get("rootPath") + File.separator + "upload" + File.separator + savePath;
 
 			InputStream is = fileStream.openStream();
 			State storageState = StorageManager.saveFileByInputStream(is,

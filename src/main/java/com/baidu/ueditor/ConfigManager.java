@@ -171,7 +171,7 @@ public final class ConfigManager {
 	}
 	
 	private String getConfigPath () {
-		return this.parentPath + File.separator + "WEB-INF" + File.separator + "jsp" + File.separator + ConfigManager.configFileName;
+		return this.parentPath + File.separator + "ueditor" + File.separator + "jsp" + File.separator + ConfigManager.configFileName;
 	}
 
 	private String[] getArray ( String key ) {

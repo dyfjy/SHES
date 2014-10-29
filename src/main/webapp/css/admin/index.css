@@ -115,7 +115,7 @@ fieldset {
 /*--------------------*/
 #inputs input {
 	background: #f1f1f1
-		url(../mypic/login-sprite.png)
+		url(../../image/admin/login-sprite.png)
 		no-repeat;
 	padding: 15px 15px 15px 30px;
 	margin: 0 0 10px 0;

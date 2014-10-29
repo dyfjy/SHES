@@ -16,7 +16,13 @@
         http://www.springframework.org/schema/tx   
         http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">  
 
-	<mvc:resources location="/WEB-INF/" mapping="/**"/>
+	<mvc:resources location="/js/" mapping="/js/**"/>
+	<mvc:resources location="/css/" mapping="/css/**"/>
+	<mvc:resources location="/image/" mapping="/image/**"/>
+	<mvc:resources location="/ueditor/" mapping="/ueditor/**"/>
+	<mvc:resources location="/upload/" mapping="/upload/**"/>
+	<mvc:resources location="/front/" mapping="/front/**"/>
+	
   
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
         <property name="prefix" value="/WEB-INF/" />  
