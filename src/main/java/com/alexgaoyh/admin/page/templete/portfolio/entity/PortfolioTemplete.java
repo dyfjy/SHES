@@ -1,12 +1,11 @@
 package com.alexgaoyh.admin.page.templete.portfolio.entity;
 
-import java.beans.Transient;
-
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import com.alexgaoyh.admin.page.templete.portfolio.util.RegexUtil;
 import com.alexgaoyh.common.entity.BaseEntity;
