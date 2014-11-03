@@ -183,7 +183,15 @@
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
 			<version>3.0.1</version>
+			<scope>provided</scope> <!--打包时不包含-->
 		</dependency>
+		
+		<dependency>
+            <groupId>javax.servlet.jsp</groupId>
+			<artifactId>jsp-api</artifactId>
+			<version>2.2</version>
+            <scope>provided</scope>   <!--这里说明jsp-api.jar文件将由应用服务器提供，打包时不需要包含-->
+        </dependency>
 		
 
 	</dependencies>
