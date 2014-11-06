@@ -51,16 +51,20 @@ public class SysmanResourceServiceImpl extends BaseServiceImpl<SysmanResource> i
 	 * @param parentId
 	 */
 	private void checkErrorMove(SysmanResource entity, Integer parentId) {
-		if( entity.getPid() == parentId ){
-			throw new RuntimeException("父级知识点不能是自己！");
-		}else{
-			if(entity != null && entity.getSubResource() != null){
-				for(SysmanResource kk : entity.getSubResource()){
-					
-					if( parentId == kk.getPid() ){
-						throw new RuntimeException("父级知识点不能是自己的子知识点！");
-					}else{
-						checkErrorMove(kk,parentId);
+		if(entity.getParent().getPid() == null) {
+			throw new RuntimeException("顶级菜单不允许操作");
+		} else {
+			if( entity.getPid() == parentId ){
+				throw new RuntimeException("父级知识点不能是自己！");
+			}else{
+				if(entity != null && entity.getSubResource() != null){
+					for(SysmanResource kk : entity.getSubResource()){
+						
+						if( parentId == kk.getPid() ){
+							throw new RuntimeException("父级知识点不能是自己的子知识点！");
+						}else{
+							checkErrorMove(kk,parentId);
+						}
 					}
 				}
 			}
