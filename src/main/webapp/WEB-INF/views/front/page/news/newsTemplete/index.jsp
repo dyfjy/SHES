@@ -18,26 +18,26 @@
     <meta content="alexgaoyh" name="author" />
 
    <!-- BEGIN GLOBAL MANDATORY STYLES -->          
-   <link href="<%=context %>/front/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/front/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+   <link href="${pageContext.request.contextPath}/front/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"/>
+   <link href="${pageContext.request.contextPath}/front/assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
    <!-- END GLOBAL MANDATORY STYLES -->
    
    <!-- BEGIN PAGE LEVEL PLUGIN STYLES --> 
-   <link href="<%=context %>/front/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" />               
+   <link href="${pageContext.request.contextPath}/front/assets/plugins/fancybox/source/jquery.fancybox.css" rel="stylesheet" />               
    <!-- END PAGE LEVEL PLUGIN STYLES -->
 
    <!-- BEGIN THEME STYLES --> 
-   <link href="<%=context %>/front/assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/front/assets/css/style.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/front/assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
-   <link href="<%=context %>/front/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/front/assets/css/custom.css" rel="stylesheet" type="text/css"/>
+   <link href="${pageContext.request.contextPath}/front/assets/css/style-metronic.css" rel="stylesheet" type="text/css"/>
+   <link href="${pageContext.request.contextPath}/front/assets/css/style.css" rel="stylesheet" type="text/css"/>
+   <link href="${pageContext.request.contextPath}/front/assets/css/themes/blue.css" rel="stylesheet" type="text/css" id="style_color"/>
+   <link href="${pageContext.request.contextPath}/front/assets/css/style-responsive.css" rel="stylesheet" type="text/css"/>
+   <link href="${pageContext.request.contextPath}/front/assets/css/custom.css" rel="stylesheet" type="text/css"/>
    <!-- END THEME STYLES -->
    
    <!-- ueditor 视频播放 -->
-   <link href="<%=context %>/ueditor/third-party/video-js/video-js.min.css" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/ueditor/third-party/video-js/video.js" rel="stylesheet" type="text/css"/>
-   <link href="<%=context %>/ueditor/ueditor.parse.js" rel="stylesheet" type="text/css"/>
+   <link href="${pageContext.request.contextPath}/ueditor/third-party/video-js/video-js.min.css" rel="stylesheet" type="text/css"/>
+   <link href="${pageContext.request.contextPath}/ueditor/third-party/video-js/video.js" rel="stylesheet" type="text/css"/>
+   <link href="${pageContext.request.contextPath}/ueditor/ueditor.parse.js" rel="stylesheet" type="text/css"/>
 
    <link rel="shortcut icon" href="favicon.ico" />
 </head>
@@ -197,16 +197,16 @@
     <!--[if lt IE 9]>
     <script src="assets/plugins/respond.min.js"></script>  
     <![endif]-->  
-    <script src="<%=context %>/front/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
-    <script src="<%=context %>/front/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
-    <script src="<%=context %>/front/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
-    <script type="text/javascript" src="<%=context %>/front/assets/plugins/hover-dropdown.js"></script>
-    <script type="text/javascript" src="<%=context %>/front/assets/plugins/back-to-top.js"></script>    
+    <script src="${pageContext.request.contextPath}/front/assets/plugins/jquery-1.10.2.min.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/front/assets/plugins/jquery-migrate-1.2.1.min.js" type="text/javascript"></script>
+    <script src="${pageContext.request.contextPath}/front/assets/plugins/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>      
+    <script type="text/javascript" src="${pageContext.request.contextPath}/front/assets/plugins/hover-dropdown.js"></script>
+    <script type="text/javascript" src="${pageContext.request.contextPath}/front/assets/plugins/back-to-top.js"></script>    
     <!-- END CORE PLUGINS -->
 
     <!-- BEGIN PAGE LEVEL JAVASCRIPTS(REQUIRED ONLY FOR CURRENT PAGE) -->
-    <script type="text/javascript" src="<%=context %>/front/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>  
-    <script src="<%=context %>/front/assets/scripts/app.js"></script>  
+    <script type="text/javascript" src="${pageContext.request.contextPath}/front/assets/plugins/fancybox/source/jquery.fancybox.pack.js"></script>  
+    <script src="${pageContext.request.contextPath}/front/assets/scripts/app.js"></script>  
     <script type="text/javascript">
         jQuery(document).ready(function() {
             App.init();                      

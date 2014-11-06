@@ -10,19 +10,9 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Manager</title>
-	<link rel="stylesheet" type="text/css" href="<%=context %>/js/jquery-easyui-1.4/themes/default/easyui.css">
-	<link rel="stylesheet" type="text/css" href="<%=context %>/js/jquery-easyui-1.4/themes/icon.css">
-	<script type="text/javascript" src="<%=context %>/js/jquery/jquery-1.4.1.js"></script>
-	<script type="text/javascript" src="<%=context %>/js/jquery-easyui-1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="<%=context %>/js/jquery-easyui-1.4/jquery.easyui.min.js"></script>
 	
-	<script type="text/javascript" src="<%=context %>/js/easyui-extend/easyui_dataGrid_extend.js"></script>
+	<jsp:include page="../../../common/adminCommon.jsp"></jsp:include>
 	
-	<script type="text/javascript" charset="utf-8" src="<%=context %>/ueditor/ueditor.config.js"></script>
-    <script type="text/javascript" charset="utf-8" src="<%=context %>/ueditor/ueditor.all.js"> </script>
-    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
-    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
-    <script type="text/javascript" charset="utf-8" src="<%=context %>/ueditor/lang/zh-cn/zh-cn.js"></script>
 </head>
 <body>
 	<table id="dg-1" class="easyui-datagrid" title="列表" style="width: 700px; height: 300px"
@@ -67,9 +57,6 @@
 	</div>
 	
 	<script type="text/javascript">
-		var context_ = '${context_}';
-		var templateUrl = '${moduleName}';
-		
 	
 		$( function() {
 			var dg1 = new DataGridEasyui(context_, 1 , templateUrl, 'crud');

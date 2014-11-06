@@ -9,8 +9,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Login</title>
-	<link rel="stylesheet" type="text/css" href="<%=context %>/css/admin/index.css">
-	<script type="text/javascript" src="<%=context %>/js/jquery/jquery-1.4.1.js"></script>
+	<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/css/admin/index.css">
+	<script type="text/javascript" src="${pageContext.request.contextPath}/js/jquery/jquery-1.4.1.js"></script>
 </head>
 <body>
 
@@ -20,7 +20,7 @@
 			<input name="userName" id="userName" type="text" placeholder="Username" autofocus required> 
 			<input name="password" id="password"  type="password" placeholder="Password" required>
 			<input name="Captcha" id="Captcha"  type="text" placeholder="验证码" required>
-			<img style=" float:right;" title="点击更换" id="img_captcha" onclick="javascript:refreshCaptcha();" src="<%=context %>/servlet/captchaCode">
+			<img style=" float:right;" title="点击更换" id="img_captcha" onclick="javascript:refreshCaptcha();" src="${pageContext.request.contextPath}/servlet/captchaCode">
 		</fieldset>
 		<input type="checkbox" name="rememberMe" value="true" /> Remember me
 		<fieldset id="actions">

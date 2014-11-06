@@ -1,20 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-<%
-	String context = request.getContextPath();
-	pageContext.setAttribute("context_", context);
-%>
+
 <%@ taglib prefix="c" uri="http://java.sun.com/jstl/core_rt"%>
 <!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">
 	<title>Manager</title>
-	<link rel="stylesheet" type="text/css" href="<%=context %>/js/jquery-easyui-1.4/themes/default/easyui.css">
-	<link rel="stylesheet" type="text/css" href="<%=context %>/js/jquery-easyui-1.4/themes/icon.css">
-	<script type="text/javascript" src="<%=context %>/js/jquery/jquery-1.4.1.js"></script>
-	<script type="text/javascript" src="<%=context %>/js/jquery-easyui-1.4/jquery.min.js"></script>
-	<script type="text/javascript" src="<%=context %>/js/jquery-easyui-1.4/jquery.easyui.min.js"></script>
+	
+	<jsp:include page="common/adminCommon.jsp"></jsp:include>	
+
 </head>
 <body  class="easyui-layout">
 
@@ -54,11 +49,10 @@
 			
 		</div>
 	</div>
-	<a href="<%=context %>/admin/logout"><i class="icon-key"></i> Log Out</a>
+	<a href="${pageContext.request.contextPath}/admin/logout"><i class="icon-key"></i> Log Out</a>
 </body>
 	<script type="text/javascript">
 	
-		var context_ = '${context_}';
 
 		$(document).ready(function() {
 			
