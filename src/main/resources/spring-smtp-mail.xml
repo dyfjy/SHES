@@ -39,7 +39,7 @@
      <!--
     <bean id="simpleMailMessage" class="org.springframework.mail.SimpleMailMessage">
         发件人email 
-        <property name="from" value="zynetschool@yeah.net" />
+        <property name="from" value="from@yeah.net" />
         -->
         <!-- 
          收件人email
