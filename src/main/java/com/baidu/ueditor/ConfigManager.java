@@ -165,7 +165,7 @@ public final class ConfigManager {
 		try{
 			JSONObject jsonConfig = new JSONObject( configContent );
 			
-			//TODO
+			//TODO    修改从config.json文件中读取出来的配置文件部分，如果存在‘项目上下文(contextPath)’ 的情况下，在代码中修改此配置项，便于后期项目打包上传时出现contextPath不匹配的情况
 			Iterator<String> it = jsonConfig.keys();
 			while(it.hasNext()){
 				String key=it.next();
