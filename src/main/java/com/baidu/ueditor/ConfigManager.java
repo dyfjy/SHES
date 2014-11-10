@@ -8,6 +8,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 
 import org.json.JSONArray;
@@ -163,6 +164,16 @@ public final class ConfigManager {
 		
 		try{
 			JSONObject jsonConfig = new JSONObject( configContent );
+			
+			//TODO
+			Iterator<String> it = jsonConfig.keys();
+			while(it.hasNext()){
+				String key=it.next();
+				if(key.contains("UrlPrefix")) {
+					jsonConfig.put(key, contextPath + "/upload");
+				}
+			}
+			//TODO
 			this.jsonConfig = jsonConfig;
 		} catch ( Exception e ) {
 			this.jsonConfig = null;
