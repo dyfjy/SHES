@@ -6,4 +6,4 @@
 #2: 本例数据库使用的是mysql5.5版本，并且在项目启动前，需要更改 db-config.properties 文件的数据库对应的ip,username,password
 
 
-#3: 使用ueditor,后期需要更改/WEB-INF/jsp/config.json 包含的*UrlPrefix部分，现在写死为项目名称
+#3: 使用ueditor,后期需要更改/WEB-INF/jsp/config.json 包含的*UrlPrefix部分，现在写死为项目名称    ***已经与2014/11/10修改此问题***
