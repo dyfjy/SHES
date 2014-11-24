@@ -75,8 +75,6 @@ public abstract class BaseController<E extends BaseEntity> {
 		String page = request.getParameter("page");//easyui datagrid 分页 页号
 		String rows = request.getParameter("rows");//easyui datagrid 分页 页数
 		
-		System.out.println(this.getBaseService());
-		
 		DetachedCriteria condition = DetachedCriteria.forClass(this.entityClass);
 		
 		decorateCondition(condition);
