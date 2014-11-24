@@ -4,6 +4,9 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 import com.alexgaoyh.common.entity.BaseEntity;
 
 /**
@@ -15,6 +18,7 @@ import com.alexgaoyh.common.entity.BaseEntity;
  */
 @Entity
 @Table(name="NEWS_TEMPLETE")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region="newsTemplete")
 public class NewsTemplete extends BaseEntity{
 	
 	/**

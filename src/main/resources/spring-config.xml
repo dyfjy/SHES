@@ -124,6 +124,13 @@
 				<prop key="hibernate.bytecode.use_reflection_optimizer"></prop>
 				<prop key="hibernate.enable_lazy_load_no_trans">${hibernate.enable_lazy_load_no_trans}</prop>
 				<prop key="connection.provider_class">${connection.provider_class}</prop> 
+				    <!-- 开启查询缓存 -->  
+			    <prop key="hibernate.cache.use_query_cache">true</prop>  
+			    <!-- 开启二级缓存 -->  
+			    <prop key="hibernate.cache.use_second_level_cache">true</prop>  
+			    <!-- 高速缓存提供程序 -->   
+			    <!-- 由于spring也使用了Ehcache, 保证双方都使用同一个缓存管理器 -->  
+			    <prop key="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.SingletonEhCacheRegionFactory</prop>  
 				<!-- 最小连接数 --> 
 				<prop key="hibernate.c3p0.min_size">${hibernate.c3p0.min_size}</prop>
 				<!-- 最大连接数 -->
@@ -203,5 +210,14 @@
 			</list>
 		</property>
 	</bean> 
+	
+    <!-- cacheManager, 指定ehcache.xml的位置 -->   
+	<bean id="cacheManagerEhcache" class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">  
+	    <property name="configLocation">  
+	        <value>classpath:ehcache.xml</value>  
+	    </property>  
+	    <!-- 由于hibernate也使用了Ehcache, 保证双方都使用同一个缓存管理器 -->  
+	    <property name="shared" value="true"/>  
+	</bean>  
 
 </beans>
