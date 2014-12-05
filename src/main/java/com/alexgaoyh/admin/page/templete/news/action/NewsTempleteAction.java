@@ -22,7 +22,7 @@ import com.alexgaoyh.common.service.BaseService;
  * @Thu Oct 16 18:16:40 CST 2014
  */
 @Controller
-@RequestMapping(value="/admin/page/templete/newsTemplete")
+@RequestMapping(value="admin/page/templete/newsTemplete")
 public class NewsTempleteAction extends BaseController<NewsTemplete> {
 
 	private static final Logger LOGGER = Logger.getLogger(NewsTemplete.class);
