@@ -57,19 +57,19 @@ public class AdminController {
 		
 		Subject subject = SecurityUtils.getSubject();
 		//可以使用 subject.isAuthenticated() 以判断当前用户已经登录过了 此时可以直接通过subject.getSession()去获取我们放入session的信息了。
-		System.out.println(" subject.isAuthenticated() = "+subject.isAuthenticated());
 		SysmanUser user = (SysmanUser) subject.getPrincipal();
 		
 		
 		if(user != null){
 			model.put("userName", user.getUserName());
-			System.out.println("user = "+user.getUserName());
 		}
 		
-		if (error == true) {
-			model.put("error","You have entered an invalid username or password!");
+		//String literals should not be duplicated
+		String errorStr = "error";
+		if (error) {
+			model.put(errorStr,"You have entered an invalid username or password!");
 		} else {
-			model.put("error", "");
+			model.put(errorStr, "");
 		}
         return new ModelAndView("views/admin/login");
     }
@@ -82,7 +82,6 @@ public class AdminController {
 	@RequestMapping(value = "/denied", method = RequestMethod.GET)
 	public ModelAndView denied() {
 		Subject subject = SecurityUtils.getSubject();
-		SysmanUser user = (SysmanUser) subject.getPrincipal();
 		
 		return new ModelAndView("views/admin/denied");
 		
@@ -124,7 +123,7 @@ public class AdminController {
 		String captcha = request.getParameter("Captcha");
 		String exitCode = (String) request.getSession().getAttribute(CaptchaConstant.KEY_CAPTCHA);
 		if (null == captcha || !captcha.equalsIgnoreCase(exitCode)) {
-			System.out.println("验证码错误");
+			
 		}else{
 			captchaStatus = true;
 			
@@ -135,9 +134,6 @@ public class AdminController {
 			Md5Hash md5Hash = new Md5Hash(password);
 			
 			UsernamePasswordToken token = new UsernamePasswordToken(username, md5Hash.toHex(), Boolean.parseBoolean(rememberMe));
-			
-			System.out.println(token.getUsername());
-			System.out.println(token.getPassword());
 			
 			try {
 				Subject subject = SecurityUtils.getSubject();
@@ -175,8 +171,7 @@ public class AdminController {
 	public ModelAndView doLogout() {
 		Subject subject = SecurityUtils.getSubject();
 		if (subject.isAuthenticated()) {
-			SysmanUser user = (SysmanUser) subject.getPrincipal();
-			System.out.println("登出用户：" + user.getUserName() );
+			//"登出用户：" + ((SysmanUser) subject.getPrincipal()).getUserName()
 			// session 会销毁，在SessionListener监听session销毁，清理权限缓存
 			subject.logout(); 
 		}
@@ -190,7 +185,6 @@ public class AdminController {
 	public String getMenus() {
 		
 		Subject subject = SecurityUtils.getSubject();
-		SysmanUser user = (SysmanUser) subject.getPrincipal();
 
 		List<SysmanResource> sysmanResourceList = sysmanResourceService.getRootResourceList();
 		
@@ -241,7 +235,7 @@ public class AdminController {
 		Subject subject = SecurityUtils.getSubject();
 		//具体响应ShiroDbRealm。doGetAuthorizationInfo，判断是否包含此url的响应权限
 		boolean isPermitted = subject.isPermitted(url);
-		if(isPermitted == true) {
+		if(isPermitted) {
 			result = new Result(true, "包含权限");
 		}else{
 			result = new Result(false, "不包含权限");
