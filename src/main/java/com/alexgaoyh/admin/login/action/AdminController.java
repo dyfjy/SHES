@@ -1,7 +1,9 @@
 package com.alexgaoyh.admin.login.action;
 
+import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -146,13 +148,13 @@ public class AdminController {
 				loginStatus = true;
 				
 			} catch (UnknownAccountException ex) {
-				ex.printStackTrace();
+				LOGGER.info("context", ex); 
 				
 			} catch (IncorrectCredentialsException ex) {
-				ex.printStackTrace();
+				LOGGER.info("context", ex); 
 			}
 			catch (Exception ex) {
-				ex.printStackTrace();
+				LOGGER.info("context", ex); 
 			}
 		}
 		
@@ -175,7 +177,8 @@ public class AdminController {
 		if (subject.isAuthenticated()) {
 			SysmanUser user = (SysmanUser) subject.getPrincipal();
 			System.out.println("登出用户：" + user.getUserName() );
-			subject.logout(); // session 会销毁，在SessionListener监听session销毁，清理权限缓存
+			// session 会销毁，在SessionListener监听session销毁，清理权限缓存
+			subject.logout(); 
 		}
 		
 		return new ModelAndView("views/admin/login");
@@ -196,7 +199,8 @@ public class AdminController {
 	
 	private List<TreeNode> resourceToTreeNode(List<SysmanResource> resource) {
 
-		if (resource != null && resource.size() > 0 && resource.get(0).getResourceType() == SysmanResource.TYPE_MENU) {
+		//Use isEmpty() to check whether the collection is empty or not.
+		if (resource != null && resource.isEmpty() && resource.get(0).getResourceType() == SysmanResource.TYPE_MENU) {
 			List<TreeNode> ch = new ArrayList<TreeNode>();
 			for (SysmanResource rr : resource) {
 				
@@ -221,13 +225,14 @@ public class AdminController {
 
 			return ch;
 		}
-
-		return null;
+		//Empty arrays and collections should be returned instead of null
+		return Collections.emptyList();
 	}
 	
 	@RequestMapping(value="permissionsCheck")
     @ResponseBody
-	private void permissionsCheck(HttpServletRequest request, HttpServletResponse response) throws Exception {
+	private void permissionsCheck(HttpServletRequest request, HttpServletResponse response) throws IOException {
+		//Define and throw a dedicated exception instead of using a generic one.
 		Result result = null;
 		
 		String url = request.getParameter("url");

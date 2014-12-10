@@ -10,7 +10,11 @@ import java.util.Random;
 
 import javax.imageio.ImageIO;
 
+import org.apache.log4j.Logger;
+
 public class CaptchaUtil {
+	
+	private static final Logger LOGGER = Logger.getLogger(CaptchaUtil.class);
 
 	// 随机产生的字符串
 	private static final String RANDOM_STRS = "0123456789";
@@ -109,7 +113,7 @@ public class CaptchaUtil {
 			ImageIO.write(image, "JPEG", new FileOutputStream(new File(
 					"random-code.jpg")));
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.info("context", e);
 		}
 
 	}

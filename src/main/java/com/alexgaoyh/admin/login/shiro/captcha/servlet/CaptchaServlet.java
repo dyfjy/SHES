@@ -10,10 +10,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+import org.apache.log4j.Logger;
+
 import com.alexgaoyh.admin.login.shiro.captcha.CaptchaUtil;
 import com.alexgaoyh.admin.login.shiro.captcha.constant.CaptchaConstant;
 
 public class CaptchaServlet extends HttpServlet {
+	
+	private static final Logger LOGGER = Logger.getLogger(CaptchaServlet.class);
 
 	private static final long serialVersionUID = -124247581620199710L;
 
@@ -40,7 +44,7 @@ public class CaptchaServlet extends HttpServlet {
 			ImageIO.write(image, "JPEG", resp.getOutputStream());
 
 		} catch (Exception e) {
-			e.printStackTrace();
+			LOGGER.info("context", e);
 		}
 
 	}
