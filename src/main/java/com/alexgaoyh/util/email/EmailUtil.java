@@ -17,7 +17,7 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  */
 public class EmailUtil {
 
-	private static final Logger LOG = LoggerFactory.getLogger(EmailUtil.class);
+	private static final Logger LOGGER = LoggerFactory.getLogger(EmailUtil.class);
 	
 	/**
 	 * @参数名：@param subject 邮件主题
@@ -25,15 +25,15 @@ public class EmailUtil {
 	 * @参数名：@param to 收件人Email地址
 	 */
 	public static void send(String subject, String content, String to){
-    	ApplicationContext context =  new ClassPathXmlApplicationContext("spring-smtp-mail.xml");
+		ClassPathXmlApplicationContext context =  new ClassPathXmlApplicationContext("spring-smtp-mail.xml");
  
     	Email mm = (Email) context.getBean("simpleMail");
         try {
-        	LOG.info("Params : createTime = ["+ (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).format(new Date()) +"] ,  subject = [" + subject + "] ,  content = [" + content + "] ,  to = [" + to + "]");
+        	LOGGER.info("Params : createTime = ["+ (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).format(new Date()) +"] ,  subject = [" + subject + "] ,  content = [" + content + "] ,  to = [" + to + "]");
 			mm.sendMail(subject, content, to);
 		} catch (MessagingException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+			LOGGER.info("context", e);
 		}
     }
 }
