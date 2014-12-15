@@ -7,7 +7,6 @@ import javax.mail.MessagingException;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 /**
@@ -16,6 +15,10 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
  *
  */
 public class EmailUtil {
+	
+	private EmailUtil() {
+		// Utility classes should not have a public constructor
+	}
 
 	private static final Logger LOGGER = LoggerFactory.getLogger(EmailUtil.class);
 	
@@ -32,7 +35,6 @@ public class EmailUtil {
         	LOGGER.info("Params : createTime = ["+ (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).format(new Date()) +"] ,  subject = [" + subject + "] ,  content = [" + content + "] ,  to = [" + to + "]");
 			mm.sendMail(subject, content, to);
 		} catch (MessagingException e) {
-			// TODO Auto-generated catch block
 			LOGGER.info("context", e);
 		}
     }
