@@ -194,7 +194,7 @@ public class AdminController {
 	private List<TreeNode> resourceToTreeNode(List<SysmanResource> resource) {
 
 		//Use isEmpty() to check whether the collection is empty or not.
-		if (resource != null && resource.isEmpty() && resource.get(0).getResourceType() == SysmanResource.TYPE_MENU) {
+		if (resource != null && !resource.isEmpty() && resource.get(0).getResourceType() == SysmanResource.TYPE_MENU) {
 			List<TreeNode> ch = new ArrayList<TreeNode>();
 			for (SysmanResource rr : resource) {
 				
