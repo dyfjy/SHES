@@ -25,6 +25,9 @@ public class BaseEntity implements Serializable {
 	public final static int DELETE_FLAG_YES = 1 ;
 	public final static int DELETE_FLAG_NO = 0 ;
 
+    /**
+     * 主键标志
+     */
 	@Id
 	@GeneratedValue(generator = "_increment")
 	@GenericGenerator(name = "_increment", strategy = "increment")
