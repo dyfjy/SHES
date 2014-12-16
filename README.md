@@ -20,4 +20,4 @@
 	2、实体关系中增加注解 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE, region="newsTemplete")  
 		ehcache.xml 文件中增加相关配置  注意名称要一致(newsTemplete);
 		
-	3、window下java.io.tmpdir/ehcache 路径对应 C:\Users\{当前用户}\AppData\Local\Temp\ehcache 可以打印输出进行验证
+	3、window下java.io.tmpdir/ehcache 路径对应 C:\Users\{当前用户}\AppData\Local\Temp\ehcache 可以打印输出进行验证.
