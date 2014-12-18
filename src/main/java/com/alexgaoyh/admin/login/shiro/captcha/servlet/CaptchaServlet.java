@@ -15,6 +15,11 @@ import org.apache.log4j.Logger;
 import com.alexgaoyh.admin.login.shiro.captcha.CaptchaUtil;
 import com.alexgaoyh.admin.login.shiro.captcha.constant.CaptchaConstant;
 
+/**
+ * 验证码servlet
+ * @author Administrator
+ *
+ */
 public class CaptchaServlet extends HttpServlet {
 	
 	private static final Logger LOGGER = Logger.getLogger(CaptchaServlet.class);

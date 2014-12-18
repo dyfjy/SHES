@@ -2,6 +2,11 @@ package com.alexgaoyh.admin.login.shiro.captcha.exception;
 
 import org.apache.shiro.authc.AuthenticationException;
 
+/**
+ * 验证码自定义异常
+ * @author Administrator
+ *
+ */
 public class CaptchaException extends AuthenticationException {
 
 	private static final long serialVersionUID = 1L;

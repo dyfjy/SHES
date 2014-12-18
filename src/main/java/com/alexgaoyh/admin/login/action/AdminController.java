@@ -180,6 +180,10 @@ public class AdminController {
 	}
 	
 	
+	/**
+	 * 获取惨淡数据
+	 * @return
+	 */
 	@RequestMapping(value="getMenus")
     @ResponseBody
 	public String getMenus() {
@@ -191,6 +195,11 @@ public class AdminController {
 		return JSONObject.valueToString(resourceToTreeNode(sysmanResourceList));
 	}
 	
+	/**
+	 * 将SysmanResource类型的数据集合转化为前端较好识别的TreeNode
+	 * @param resource
+	 * @return
+	 */
 	private List<TreeNode> resourceToTreeNode(List<SysmanResource> resource) {
 
 		//Use isEmpty() to check whether the collection is empty or not.
@@ -223,6 +232,12 @@ public class AdminController {
 		return Collections.emptyList();
 	}
 	
+	/**
+	 * 权限判断
+	 * @param request
+	 * @param response
+	 * @throws IOException
+	 */
 	@RequestMapping(value="permissionsCheck")
     @ResponseBody
 	private void permissionsCheck(HttpServletRequest request, HttpServletResponse response) throws IOException {

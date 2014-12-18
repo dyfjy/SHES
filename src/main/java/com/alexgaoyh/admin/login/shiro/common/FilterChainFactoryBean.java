@@ -11,8 +11,9 @@ import com.alexgaoyh.sysman.admin.entity.SysmanResource;
 
 public class FilterChainFactoryBean extends HibernateTemplate  implements FactoryBean<Map<String,String>> {
 	
-
-	
+	/**
+	 * 权限map
+	 */
 	@Override
 	public Map<String, String> getObject() throws Exception {
 		Map<String,String>  map = new LinkedHashMap<String,String>();

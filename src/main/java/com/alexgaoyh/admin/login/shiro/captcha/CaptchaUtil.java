@@ -11,7 +11,11 @@ import java.util.Random;
 import javax.imageio.ImageIO;
 
 import org.apache.log4j.Logger;
-
+/**
+ * 验证码图片生成类
+ * @author Administrator
+ *
+ */
 public class CaptchaUtil {
 	
 	private static final Logger LOGGER = Logger.getLogger(CaptchaUtil.class);
