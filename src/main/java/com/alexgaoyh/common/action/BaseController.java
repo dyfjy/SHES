@@ -68,7 +68,12 @@ public abstract class BaseController<E extends BaseEntity> {
 		return model;
 	}
 	
-	
+	/**
+	 * 后台页面渲染easyui-datagrid 方法
+	 * @param request
+	 * @param response
+	 * @throws Exception
+	 */
 	@RequestMapping(value="getData")
     @ResponseBody
 	public void getData(HttpServletRequest request, HttpServletResponse response) throws Exception {
@@ -94,6 +99,12 @@ public abstract class BaseController<E extends BaseEntity> {
 		condition.add(Expression.eq("deleteFlag", BaseEntity.DELETE_FLAG_NO));
 	}
 	
+	/**
+	 * json 化
+	 * @param data
+	 * @param response
+	 * @throws IOException
+	 */
 	public void renderJson(Object data, HttpServletResponse response) throws  IOException {
 		response.setContentType("text/plain; charset=UTF-8");
 		PrintWriter writer = response.getWriter();
@@ -125,12 +136,23 @@ public abstract class BaseController<E extends BaseEntity> {
 		return null;
 	}
 
+	/**
+	 * 调用保存方法之前进行的方法调用
+	 * @param request
+	 * @param entity 对应实体信息
+	 * @throws Exception
+	 */
 	protected void beforeDoSave(HttpServletRequest request, E entity) throws Exception {
-		// TODO Auto-generated method stub
 		
 	}
+	
+	/**
+	 * 电泳保存方法之后进行的方法调用
+	 * @param request
+	 * @param entity 对应实体信息
+	 * @throws Exception
+	 */
 	protected void afterDoSave(HttpServletRequest request, E entity) throws Exception {
-		// TODO Auto-generated method stub
 		
 	}
 	
@@ -157,11 +179,22 @@ public abstract class BaseController<E extends BaseEntity> {
 		return null;
 	}
 
+	/**
+	 * 调用更新操作之前进行的操作
+	 * @param request
+	 * @param entity
+	 * @throws Exception
+	 */
 	protected void beforeDoUpdate(HttpServletRequest request, E entity) throws Exception {
-		// TODO Auto-generated method stub
 		
 	}
 	
+	/**
+	 * 调用更新操作之后进行的操作
+	 * @param request
+	 * @param entity
+	 * @throws Exception
+	 */
 	protected void afterDoUpdate(HttpServletRequest request, E entity) throws Exception {
 		
 	}

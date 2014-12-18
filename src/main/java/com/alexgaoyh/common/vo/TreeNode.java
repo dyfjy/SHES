@@ -4,6 +4,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * easyui 的树形结构对象
+ * @author Administrator
+ *
+ */
 public class TreeNode {
 
 	private Integer id;

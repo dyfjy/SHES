@@ -1,5 +1,10 @@
 package com.alexgaoyh.common.vo;
 
+/**
+ * 定义返回成功与否的标志
+ * @author Administrator
+ *
+ */
 public class Result {
 	
 	public static Result  ok(){
