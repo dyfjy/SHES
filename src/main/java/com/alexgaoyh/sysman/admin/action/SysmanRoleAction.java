@@ -1,9 +1,7 @@
 package com.alexgaoyh.sysman.admin.action;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
@@ -19,7 +17,6 @@ import com.alexgaoyh.common.service.BaseService;
 import com.alexgaoyh.common.vo.TreeNode;
 import com.alexgaoyh.sysman.admin.entity.SysmanResource;
 import com.alexgaoyh.sysman.admin.entity.SysmanRole;
-import com.alexgaoyh.sysman.admin.entity.SysmanUser;
 import com.alexgaoyh.sysman.admin.service.SysmanResourceService;
 
 /**

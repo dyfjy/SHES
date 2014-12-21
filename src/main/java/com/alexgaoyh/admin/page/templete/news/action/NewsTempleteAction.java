@@ -3,15 +3,11 @@ package com.alexgaoyh.admin.page.templete.news.action;
 import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
-import com.alexgaoyh.common.action.BaseController;
 import com.alexgaoyh.admin.page.templete.news.entity.NewsTemplete;
-import com.alexgaoyh.admin.page.templete.news.service.NewsTempleteService;
+import com.alexgaoyh.common.action.BaseController;
 import com.alexgaoyh.common.service.BaseService;
 
 /**

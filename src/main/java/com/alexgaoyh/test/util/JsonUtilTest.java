@@ -57,7 +57,7 @@ public class JsonUtilTest {
     }  
   
     private static Set<String> getFilter(JsonUtilTest value) {  
-        Set<String> set = new HashSet();  
+        Set<String> set = new HashSet<String>();  
         if (value.getName() != null) {  
             set.add("name");  
         }  

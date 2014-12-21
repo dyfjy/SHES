@@ -3,15 +3,11 @@ package com.alexgaoyh.admin.page.templete.portfolio.action;
 import javax.annotation.Resource;
 
 import org.apache.log4j.Logger;
-import org.json.JSONObject;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
-import org.springframework.web.servlet.ModelAndView;
 
-import com.alexgaoyh.common.action.BaseController;
 import com.alexgaoyh.admin.page.templete.portfolio.entity.PortfolioType;
-import com.alexgaoyh.admin.page.templete.portfolio.service.PortfolioTypeService;
+import com.alexgaoyh.common.action.BaseController;
 import com.alexgaoyh.common.service.BaseService;
 
 /**

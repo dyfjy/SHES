@@ -34,6 +34,7 @@ public class EmailUtil {
         try {
         	LOGGER.info("Params : createTime = ["+ (new SimpleDateFormat("yyyy-MM-dd HH:mm:ss")).format(new Date()) +"] ,  subject = [" + subject + "] ,  content = [" + content + "] ,  to = [" + to + "]");
 			mm.sendMail(subject, content, to);
+			context.close();
 		} catch (MessagingException e) {
 			LOGGER.info("context", e);
 		}

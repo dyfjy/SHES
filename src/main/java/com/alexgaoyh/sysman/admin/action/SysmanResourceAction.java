@@ -15,7 +15,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.alexgaoyh.common.action.BaseController;
 import com.alexgaoyh.common.service.BaseService;
-import com.alexgaoyh.common.vo.TreeNode;
 import com.alexgaoyh.sysman.admin.entity.SysmanResource;
 import com.alexgaoyh.sysman.admin.service.SysmanResourceService;
 
@@ -24,7 +23,6 @@ import com.alexgaoyh.sysman.admin.service.SysmanResourceService;
  * @desc 用户后台资源资源权限表--RBAC权限管理action控制类
  *
  * @author alexgaoyh
- * @Fri Aug 08 13:29:41 CST 2014
  */
 @Controller
 @RequestMapping(value="admin/sysmanResource")
