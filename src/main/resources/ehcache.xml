@@ -1,5 +1,6 @@
 <ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:noNamespaceSchemaLocation="../config/ehcache.xsd">
+	xsi:noNamespaceSchemaLocation="../config/ehcache.xsd" updateCheck="false">
+	<!-- EhCache在每次启动的时候都要连接到 ehcache 网站上去检查新版本  使用如上的  updateCheck="false"  来禁止这个检查新版本-->
 	<!-- Subdirectories can be specified below the property e.g. java.io.tmpdir/one -->
 	<diskStore path="java.io.tmpdir/ehcache" />
 

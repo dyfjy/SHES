@@ -119,6 +119,7 @@
 	<servlet>
 		<servlet-name>CaptchaServlet</servlet-name>
 		<servlet-class>com.alexgaoyh.admin.login.shiro.captcha.servlet.CaptchaServlet</servlet-class>
+		<load-on-startup>10</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>CaptchaServlet</servlet-name>
@@ -129,6 +130,7 @@
 	<servlet>
 		<servlet-name>UeditorServlet</servlet-name>
 		<servlet-class>com.baidu.ueditor.servlet.uploadServlet</servlet-class>
+		<load-on-startup>10</load-on-startup>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>UeditorServlet</servlet-name>

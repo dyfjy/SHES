@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.alexgaoyh.redis.util.RedisClient;
 import com.alexgaoyh.sysman.admin.entity.SysmanResource;
 import com.alexgaoyh.sysman.admin.entity.SysmanRole;
 import com.alexgaoyh.sysman.admin.entity.SysmanUser;
@@ -42,11 +43,16 @@ public class TestAction {
 	@Resource
 	private TestService testService;
 	
+	@Resource
+	private RedisClient<String, String> redisClient;
+	
 	
     @RequestMapping(value="login")  
     public ModelAndView login(){
     	//发送邮件demo
     	//EmailUtil.send("subject", "content", "924099504@qq.com");
+    	redisClient.add("aaaa", "aaaa");
+    	System.out.println(redisClient.get("aaaa"));
         return new ModelAndView("views/test");
     }
     
