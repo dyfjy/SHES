@@ -21,3 +21,26 @@
 		ehcache.xml 文件中增加相关配置  注意名称要一致(newsTemplete);
 		
 	3、window下java.io.tmpdir/ehcache 路径对应 C:\Users\{当前用户}\AppData\Local\Temp\ehcache 可以打印输出进行验证.
+	
+5: 20141212 整合redis2.6 win32/64的redis服务端在附件位置，请先下载并运行进行配置。
+	
+	1、 com.alexgaoyh.redis.util.RedisClient 为客户端，注入RedisTemplate(redis-config.xml)
+	2、 测试方法 在Action中引入 RedisClient对应的bean 直接调用相关方法即可。
+		如下：
+		
+			@Controller
+			@RequestMapping(value="test")
+			public class TestAction {
+			
+				@Resource
+				private RedisClient<String, String> redisClient;
+				
+				@RequestMapping(value="test")  
+				public ModelAndView test(){
+    				redisClient.add("aaaa", "aaaa");
+    				System.out.println(redisClient.get("aaaa"));
+        			return new ModelAndView("views/test");
+				}
+				
+			}
+			
