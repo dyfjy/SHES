@@ -38,7 +38,7 @@
 		<a href="#" class="easyui-linkbutton remove" iconCls="icon-remove" plain="true">删除</a>
 	</div>
 	
-	<div id="dlg-1" class="easyui-dialog" title="数据参数" style="width: 600px; height: 280px; padding: 10px 20px" closed="true" buttons="#dlg-buttons-1">
+	<div id="dlg-1" class="easyui-dialog" title="数据参数" style="z-Index: 100px;" fit="true" closed="true" buttons="#dlg-buttons-1">
 		<form method="post">
 			<table cellpadding="5">
 				<tr><td>如用户未更改密码，默认密码为admin</td></tr>
