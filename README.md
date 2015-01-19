@@ -1,4 +1,4 @@
-
+演示地址    http://120.131.70.216/web/admin/login  用户名密码 admin/admin
  
 项目名为alexgaoyh  但是发布的时候，设定的context root 为web  即发布到容器中之后，使用的是web项目名
 后台登陆为： http://localhost:8080/web/admin/login  如果导入项目包含的web.sql 文件的话，登录名密码为admin/admin
