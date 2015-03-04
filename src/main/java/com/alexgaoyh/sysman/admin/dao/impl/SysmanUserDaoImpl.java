@@ -18,7 +18,7 @@ public class SysmanUserDaoImpl extends BaseDaoImpl<SysmanUser> implements Sysman
 
 	@Override
 	public SysmanUser findByName(String userName) {
-		String hql = "from "+ this.clazz.getName() + " where username = ? and deleteFlag=0" ;
+		String hql = "from "+ this.clazz.getName() + " where userName = ? and deleteFlag=0" ;
 		return this.queryForObject(hql, new Object[]{userName});
 	}
 	
