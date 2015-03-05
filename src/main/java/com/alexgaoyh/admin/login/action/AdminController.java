@@ -115,16 +115,16 @@ public class AdminController {
 	@RequestMapping(value = "/doLogin", method = RequestMethod.POST)
 	public ModelAndView doLogin(HttpServletRequest request, HttpServletResponse response) {
 
-		Map<String, Boolean> map = new HashMap<String, Boolean>();
+		Map<String, Object> map = new HashMap<String, Object>();
 		
 		boolean loginStatus = false;
 		boolean captchaStatus = false;
+		String loginInfo = "";
 		
 		String captcha = request.getParameter("Captcha");
 		String exitCode = (String) request.getSession().getAttribute(CaptchaConstant.KEY_CAPTCHA);
-		if (null == captcha || !captcha.equalsIgnoreCase(exitCode)) {
-			
-		}else{
+		
+		if (null != captcha && captcha.equalsIgnoreCase(exitCode)) {
 			captchaStatus = true;
 			
 			String username = request.getParameter("userName");
@@ -145,17 +145,21 @@ public class AdminController {
 				
 			} catch (UnknownAccountException ex) {
 				LOGGER.info("context", ex); 
+				loginInfo = "无此账号";
 				
 			} catch (IncorrectCredentialsException ex) {
 				LOGGER.info("context", ex); 
+				loginInfo = "账号验证失败";
 			}
 			catch (Exception ex) {
 				LOGGER.info("context", ex); 
+				loginInfo = "登陆异常，请联系管理员";
 			}
 		}
 		
 		map.put("loginStatus", loginStatus);
 		map.put("captchaStatus", captchaStatus);
+		map.put("loginInfo", loginInfo);
 		
 		ModelAndView mav = new ModelAndView("views/admin/index", map);
 

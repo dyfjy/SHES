@@ -17,18 +17,22 @@
 	<script type="text/javascript">
 		var loginStatus = ${loginStatus};
 		var captchaStatus = ${captchaStatus};
+		var loginInfo = '${loginInfo}';
 		
 		var context_ = '${context_}';
 		
 		$(document).ready(function(){
 			if(loginStatus == true){
-				setTimeout(window.location.href = context_ + "/admin/manager",99999);
+				window.setTimeout("window.location='"+context_+"/admin/manager'",1000); 
 			}
 			if(loginStatus == false){
 				if(captchaStatus == false){
 					$("#message").html("验证码错误！");
 				}
-				setTimeout(window.location.href = context_ + "/admin/login",99999);
+				if(captchaStatus == true) {
+					$("#message").html(loginInfo);
+				}
+				window.setTimeout("window.location='"+context_+"/admin/login'",1000); 
 			}
 		});
 	</script>
