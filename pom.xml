@@ -8,6 +8,26 @@
 	<name>web Maven Webapp</name>
 	<url>http://maven.apache.org</url>
 	
+	<!-- Nexus 私服配置 -->
+	<!-- <repositories>
+		<repository>
+			<id>nexus</id>
+			<name>Nexus</name>
+			<url>http://localhost:8081/nexus/content/groups/public/</url>
+			<releases><enabled>true</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</repository>
+	</repositories>
+	<pluginRepositories>
+		<pluginRepository>
+			<id>nexus</id>
+			<name>Nexus</name>
+			<url>http://localhost:8081/nexus/content/groups/public/</url>
+			<releases><enabled>true</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</pluginRepository>
+	</pluginRepositories> -->
+	
 	<developers>
 		<developer>
 			<id>web</id>
