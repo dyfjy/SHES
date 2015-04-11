@@ -9,7 +9,7 @@
 	<url>http://maven.apache.org</url>
 	
 	<!-- Nexus 私服配置 -->
-	<!-- <repositories>
+	<repositories>
 		<repository>
 			<id>nexus</id>
 			<name>Nexus</name>
@@ -26,7 +26,7 @@
 			<releases><enabled>true</enabled></releases>
 			<snapshots><enabled>true</enabled></snapshots>
 		</pluginRepository>
-	</pluginRepositories> -->
+	</pluginRepositories>
 	
 	<developers>
 		<developer>
@@ -257,6 +257,18 @@
 	</dependencies>
 	<build>
 		<finalName>web</finalName>
+		<!-- <plugins>
+			<plugin> 
+				<groupId>org.apache.tomcat.maven</groupId> 
+				<artifactId>tomcat7-maven-plugin</artifactId> 
+				<version>2.2</version> 
+				<configuration> 
+				<url>http://localhost:8080/manager/text</url> tomcat管理路径
+				<server>Tomcat7</server> 与settings.xml文件中Server的id相同
+				<path>/web</path> 应用的部署位置
+				</configuration> 
+		    </plugin>
+		</plugins> -->
 	</build>
 	
 	<properties>
